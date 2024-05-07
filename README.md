@@ -1,3 +1,29 @@
+# Data analysis:
+# LinkedIn Job Postings - 2023
+### source: https://www.kaggle.com/datasets/arshkon/linkedin-job-postings/data
+## Summary: The dataset contains information about LinkedIn job postings from 2023. Data files such as job_posting.csv, skills.csv, benefits.csv, companies.csv, company_industry.csv and employee_counts.csv were considered in the analysis. In the process of analyzing these files, these files were prepared and merged accordingly. A more detailed analysis of the rest of the files can be performed in the future by using the remaining files.
+## Questions and hypotheses:
+* __Question:__ In what currency were salaries paid?
+__Conclusion:__ The currency was US dollars (USD).
+* __Question:__ For which country were there the most job offers? __Conclusion:__ Most of the job offers were directed at residents of the United States (US).
+* __Question:__ What were the most popular job posting websites? __Conclusion:__ The most popular site was 'click2.apply', followed by 'jobs.smartrecruiters' in second place and 'click.appcast.io' in third.
+* __Hypothesis :__ In the dataset, the largest number of job offers is in the IT industry. __Conclusion:__ The largest number of offers were from the Staffing and Recruiting industry, rather than the IT industry.
+* __Question:__ Was Staffing and Recruiting also the most frequently applied and viewed industry? __Conclusion:__ Staffing and Recruiting was not the most frequently applied and viewed industry. The most frequently viewed and applied offers were those from the IT industry. 
+* __Hypothesis:__ Nowadays, most companies have a remote work option. __Conclusion:__ Most companies didn't have a remote work option.
+* __Hypothesis:__ Employees with more experience were most likely to receive the offers. __Conclusion:__ Mostly mid-senior workers were offered jobs. Entry-level offers ranked second.
+* __Hypothesis:__ In IT, most of the offers were directed at more mid-senior employees rather than entry-level ones. __Conclusion:__ Most of the IT industry's offers were directed at mid-senior employees. For mid-senior employees, the number of offers was much higher than for entry-level employees.
+* __Hypothesis:__ Most companies were looking for full-time employees. __Conclusion:__ Most types of employment are full-time, followed by contract and in third place by part-time.
+* __Hypothesis:__ The largest number of IT job offers was for the city of San Francisco. __Conclusion:__ The largest number of offers for the IT sector were in San Francisco.
+* __Question:__ What was the distribution of offers addressed to IT employees on the US map? __Conclusion:__ The largest number of offers for IT employees were in the state of California - where San Francisco (Silicon Valley) is located.
+* __Question:__ What was the correlation between the size of the company and the number of views, number of applications, number of followers and number of employees? __Conclusion:__ The number of applications correlated with the number of views (0.85), as did the number of employees correlated with the number of followers (0.81). Views, applications, employees, and followers were not affected by the size of the company.
+* __Question:__ In how many companies' job postings is the salary not stated (neither min, max, or med salary)? __Conclusion:__ The majority of postings, 19,429, did not include a salary. On the other hand, 1,316 job postings included salary information.
+* __Question:__ In which state does the average U.S. citizen earn the most? __Conclusion:__ Maine has the highest average salary, while Oklahoma has the lowest. In the middle of the country, the average salary is the lowest.
+* __Question:__ Which company has the largest average salaries? __Conclusion:__ The largest average salaries were provided by RISC Zero, followed by The Dedham Group in second place and The Dedham Group in third place.
+* __Question:__ What form of employment is the most profitable? __Conclusion:__ It was most profitable to work full-time, and the most favorable pay period was the yearly period.
+* __Hypothesis:__ In the IT industry, employees have the highest maximum salaries. __Conclusion:__ In the IT industry, the maximum annual salaries were more than $1M - the highest value of $1.66M was recorded for IT, followed by an offer rate from Staffing ($1.3M), and two more also from IT ($1.1M and $1M).
+* __Question:__ Which industry had the highest average salaries? __Conclusion:__ The highest average salaries were in the IT industry.
+
+
 # Analiza danych: 
 ## LinkedIn Job Postings - 2023
 ### źródło: https://www.kaggle.com/datasets/arshkon/linkedin-job-postings/data
