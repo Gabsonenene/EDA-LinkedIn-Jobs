@@ -1,50 +1,74 @@
-# Data analysis:
-# LinkedIn Job Postings - 2023
-### source: https://www.kaggle.com/datasets/arshkon/linkedin-job-postings/data
-## Summary: The dataset contains information about LinkedIn job postings from 2023. Data files such as job_posting.csv, skills.csv, benefits.csv, companies.csv, company_industry.csv and employee_counts.csv were considered in the analysis. In the process of analyzing these files, these files were prepared and merged accordingly. A more detailed analysis of the rest of the files can be performed in the future by using the remaining files.
-## Questions and hypotheses:
-* __Question:__ In what currency were salaries paid?
-__Conclusion:__ The currency was US dollars (USD).
-* __Question:__ For which country were there the most job offers? __Conclusion:__ Most of the job offers were directed at residents of the United States (US).
-* __Question:__ What were the most popular job posting websites? __Conclusion:__ The most popular site was 'click2.apply', followed by 'jobs.smartrecruiters' in second place and 'click.appcast.io' in third.
-* __Hypothesis :__ In the dataset, the largest number of job offers is in the IT industry. __Conclusion:__ The largest number of offers were from the Staffing and Recruiting industry, rather than the IT industry.
-* __Question:__ Was Staffing and Recruiting also the most frequently applied and viewed industry? __Conclusion:__ Staffing and Recruiting was not the most frequently applied and viewed industry. The most frequently viewed and applied offers were those from the IT industry. 
-* __Hypothesis:__ Nowadays, most companies have a remote work option. __Conclusion:__ Most companies didn't have a remote work option.
-* __Hypothesis:__ Employees with more experience were most likely to receive the offers. __Conclusion:__ Mostly mid-senior workers were offered jobs. Entry-level offers ranked second.
-* __Hypothesis:__ In IT, most of the offers were directed at more mid-senior employees rather than entry-level ones. __Conclusion:__ Most of the IT industry's offers were directed at mid-senior employees. For mid-senior employees, the number of offers was much higher than for entry-level employees.
-* __Hypothesis:__ Most companies were looking for full-time employees. __Conclusion:__ Most types of employment are full-time, followed by contract and in third place by part-time.
-* __Hypothesis:__ The largest number of IT job offers was for the city of San Francisco. __Conclusion:__ The largest number of offers for the IT sector were in San Francisco.
-* __Question:__ What was the distribution of offers addressed to IT employees on the US map? __Conclusion:__ The largest number of offers for IT employees were in the state of California - where San Francisco (Silicon Valley) is located.
-* __Question:__ What was the correlation between the size of the company and the number of views, number of applications, number of followers and number of employees? __Conclusion:__ The number of applications correlated with the number of views (0.85), as did the number of employees correlated with the number of followers (0.81). Views, applications, employees, and followers were not affected by the size of the company.
-* __Question:__ In how many companies' job postings is the salary not stated (neither min, max, or med salary)? __Conclusion:__ The majority of postings, 19,429, did not include a salary. On the other hand, 1,316 job postings included salary information.
-* __Question:__ In which state does the average U.S. citizen earn the most? __Conclusion:__ Maine has the highest average salary, while Oklahoma has the lowest. In the middle of the country, the average salary is the lowest.
-* __Question:__ Which company has the largest average salaries? __Conclusion:__ The largest average salaries were provided by RISC Zero, followed by The Dedham Group in second place and The Dedham Group in third place.
-* __Question:__ What form of employment is the most profitable? __Conclusion:__ It was most profitable to work full-time, and the most favorable pay period was the yearly period.
-* __Hypothesis:__ In the IT industry, employees have the highest maximum salaries. __Conclusion:__ In the IT industry, the maximum annual salaries were more than $1M - the highest value of $1.66M was recorded for IT, followed by an offer rate from Staffing ($1.3M), and two more also from IT ($1.1M and $1M).
-* __Question:__ Which industry had the highest average salaries? __Conclusion:__ The highest average salaries were in the IT industry.
+# Data Analysis:  
+## LinkedIn Job Postings - 2023  
+### Source: [https://www.kaggle.com/datasets/arshkon/linkedin-job-postings/data](https://www.kaggle.com/datasets/arshkon/linkedin-job-postings/data)  
+
+## Project Description:  
+The project focuses on analyzing job posting data from the LinkedIn platform published in 2023. The dataset, available on Kaggle, includes diverse details about job postings, such as salaries, locations, industries, employment types, requirements, and other specifics.
+
+## Main Objectives of the Analysis:  
+1. Examine the characteristics of job postings in terms of salaries, employment types, and levels of experience required by employers.  
+2. Identify the most popular locations, industries, and companies publishing job advertisements.  
+3. Understand employer and employee preferences, such as the number of applications per posting or the popularity of job ads.  
+4. Analyze correlations between various variables, e.g., company size and the popularity of job postings.  
+
+## Key Findings:  
+* **Salary Currency**: All salaries are presented in U.S. dollars (USD).  
+* **Job Locations**: Most advertisements were from the United States, with a dominance of listings in California, especially in San Francisco.  
+* **Industries**: The majority of postings originated from the "Staffing and Recruiting" industry, but IT had the highest salary rates and was the most frequently viewed industry.  
+* **Remote Work**: Most postings did not offer remote work options.  
+* **Experience Levels**: The majority of offers targeted mid-level professionals.  
+* **Employment Types**: Full-time positions were the most common and offered the highest average salaries.  
+* **IT Industry Salaries**: Maximum annual salaries in this sector exceeded $1.66 million.  
+
+## Data Scope:  
+The analysis includes several files, such as:  
+* **job_postings.csv**: Job posting details (e.g., salaries, locations, experience).  
+* **companies.csv**: Company information (e.g., size, location).  
+* **skills.csv, benefits.csv**: Skills and benefits required in the job postings.  
+
+## Example Questions and Hypotheses:  
+1. **Which employment types are the most profitable?**  
+   **Conclusion**: Full-time positions with annual salaries were the most profitable.  
+2. **Which U.S. state offers the highest salaries?**  
+   **Conclusion**: The highest average salaries were observed in Maine.  
+
+## Conclusions:  
+The project can be further developed with detailed analysis of other data files, such as benefits, perks, or more advanced correlations between variables. The results can help both employers and job seekers gain a better understanding of the job market.  
 
 
-# Analiza danych: 
-## LinkedIn Job Postings - 2023
-### źródło: https://www.kaggle.com/datasets/arshkon/linkedin-job-postings/data
-## Opis: Zbiór danych dotyczy informacji na temat ofert pracy pochodzących z portalu LinkedIn z 2023 roku. Podczas analizy głównie wzięto pod uwagę pliki job_posting.csv, skills.csv, benefits.csv, companies.csv, company_industreis.csv oraz employee_counts.csv. W trakcie analizy pliki te zostały odpowiednio przygotowane oraz połączone. Pozostałe pliki mogą posłużyć w przyszłości do dalszych, bardziej szczegółowych analiz.
-## Postawione pytania oraz hipotezy:
-* __Pytanie:__ W jakiej walucie były podane stawki?
-__Wniosek:__ Dla wszystkich podanych kwot walutą były dolary amerykańskie (USD).
-* __Pytanie:__ Dla jakiego kraju było najwięcej ofert pracy? __Wniosek:__ Większość ofert pracy była skierowana do mieszkańców Stanów Zjednoczonych (US).
-* __Pytanie:__ Jakie były najbardziej popularne strony, na których zamieszczono oferty pracy? __Wniosek:__ Najbardziej popularną stroną było 'click2.apply', na drugim miejscu 'jobs.smartrecruiters', a na trzecin 'click.appcast.io'".
-* __Hipoteza:__ W zbiorze danych najwięcej ogłoszeń dotyczy branży IT. __Wniosek:__ Najwięcej ogłoszeń było z branży Staffing and Recruiting, a nie z branży IT.
-* __Pytanie:__ Czy Staffing and Recruiting było także najczęściej aplikowaną i wyświetlaną branżą? __Wniosek:__ Staffing and Recruiting nie było najczęściej aplikowaną i wyświetlaną branżą. Na pierwszym miejscu znalazły się ogłoszenia z branży IT.
-* __Hipoteza:__ W obecnych czasach większość firm posiada opcję pracy zdalnej. __Wniosek:__ Większość firm nie posiadała opcji pracy zdalnej.
-* __Hipoteza:__ Większość ofert była skierowana do bardziej doświadczonych pracowników. __Wniosek:__ Najwięcej ofert skierowanych było do średniozaawansowanych pracowników. Na drugim miejscu znalazły się oferty skierowane dla początkujących pracowników.
-* __Hipoteza:__ W IT większość ofert była skierowana do bardziej zaawansowanych pracowników niż początkujących. __Wniosek:__ W branży IT większość ofert skierowana była do średniozaawansowanych pracowników. Występowała spora różnica między ilością ofert dla średniozaawansowanych pracowników, a dla początkujących pracowników.
-* __Hipoteza:__ Większość firm szukała pracowników na pełen etat. __Wniosek:__ Większość rodzajów zatrudnienia to oferty na pełen etat (full-time), później oferty pracy na kontrakt (Contract), a na trzecim miejscu oferty na część etatu (Part-time).
-* __Hipoteza:__ Najwięcej ogłoszeń IT było dla miasta San Francisco. __Wniosek:__ Najwięcej ogłoszeń dla sektora IT znajdowało się w San Fransico.
-* __Pytanie:__ Jak na mapie US rozkładały się oferty skierowane do pracowników IT? __Wniosek:__ Najwięcej ofert dla pracowników IT znajdwało się w stanie California - w którym leży San Francisco (Dolina Krzemowa).
-* __Pytanie:__ Jaka była korelacja między wielkością firmy a ilością wyświetleń, aplikacji, liczbą followersów i liczbą pracowników? __Wniosek:__ Występiła korelacja między ilością aplikacji i wyświetleń (0.85) oraz między liczbą pracowników i liczbą obserwatorów. Rozmiar firmy nie miał znaczącego wpływu na ilość wyświetleń, aplikacji lub liczby pracowników i followersów.
-* __Pytanie:__ Jak wiele firm nie podało 'widełek' w swoich ogłoszeniach (ani min, ani max, ani med salary)? __Wniosek:__ Aż 19 429 firm nie podało widełek, czyli większa część ogłoszeń. Natomiast 13116 ogłoszeń zawierało co najmniej jedną informację o wysokości stawki.
-* __Pytanie:__ W którym stanie średnio zarabia się najwięcej? __Wniosek:__ Najwyższe średnie zarobki są dla stanu Maine, natomiast najniższe dla stanu Oklahoma.Najniższe średnie zarobki występują w środkowej części kraju. 
-* __Pytanie:__ W której firmie były największe średnie stawki? __Wniosek:__ Największe średnie stawki oferowała firma RISC Zero, na drugim miejscu The Dedham Group i na trzecim firma The Dedham Group.
-* __Pytanie:__ Jaka forma zatrudnienia jest najbardziej opłacalna? __Wniosek:__ Najbardziej opłacalną formą zatrudnienia było full-time, a najbardziej korzystynie prezentowała się stawka roczna.
-* __Hipoteza:__ W branży IT pracownicy mają najwyższe maksymalne wartości stawek. __Wniosek:__ W branży IT maksymalne stawki roczne stanowiły nawet ponad 1M dolarów - dla IT odnotowano najwyższą wartość równą 1.66 M. Na drugim miejscu była stawka oferty ze Staffing (1.3M), a dwie następne także z IT (1.1 M i 1M).
-* __Pytanie:__ Która branża miała najwyższe średnie zarobki? __Wniosek:__ Najwyższe średnie zarobki były w branży IT.
+# Analiza danych:  
+## LinkedIn Job Postings - 2023  
+### Źródło: [https://www.kaggle.com/datasets/arshkon/linkedin-job-postings/data](https://www.kaggle.com/datasets/arshkon/linkedin-job-postings/data)  
+
+## Opis projektu:  
+Projekt koncentruje się na analizie danych dotyczących ofert pracy z platformy LinkedIn, opublikowanych w 2023 roku. Wykorzystano zbiór danych dostępny na Kaggle, który obejmuje różnorodne informacje o ofertach pracy, takie jak wynagrodzenia, lokalizacje, branże, formy zatrudnienia, wymagania i wiele innych szczegółów.  
+
+## Główne cele analizy:  
+1. Zbadanie charakterystyki ofert pracy pod kątem wynagrodzeń, form zatrudnienia i poziomu doświadczenia wymaganego przez pracodawców.  
+2. Określenie najpopularniejszych lokalizacji, branż oraz firm publikujących ogłoszenia.  
+3. Zrozumienie preferencji pracodawców i pracowników, takich jak liczba aplikacji na oferty czy popularność ogłoszeń.  
+4. Przeanalizowanie korelacji między różnymi zmiennymi, np. wielkością firmy a popularnością ofert.  
+
+## Główne wnioski:  
+* **Waluty wynagrodzeń**: Wszystkie stawki podano w dolarach amerykańskich (USD).  
+* **Lokalizacja ofert pracy**: Większość ogłoszeń dotyczyła Stanów Zjednoczonych, z dominacją ofert w Kalifornii, szczególnie w San Francisco.  
+* **Branże**: Najwięcej ogłoszeń pochodziło z branży "Staffing and Recruiting", ale IT miało najwyższe stawki wynagrodzeń i było najczęściej wyświetlaną branżą.  
+* **Zdalna praca**: Większość ofert nie oferowała opcji pracy zdalnej.  
+* **Doświadczenie**: Najwięcej ofert skierowano do średniozaawansowanych pracowników.  
+* **Formy zatrudnienia**: Najczęstsze były oferty na pełny etat (full-time), które również oferowały najwyższe średnie wynagrodzenia.  
+* **Zarobki w branży IT**: Maksymalne roczne wynagrodzenia w tej branży wynosiły ponad 1,66 mln USD.  
+
+## Zakres danych:  
+Analiza obejmuje różne pliki, takie jak:  
+* **job_postings.csv**: Szczegóły ofert pracy (np. wynagrodzenia, lokalizacje, doświadczenie).  
+* **companies.csv**: Informacje o firmach (np. rozmiar, lokalizacja).  
+* **skills.csv, benefits.csv**: Umiejętności i benefity wymagane w ofertach.  
+
+## Przykłady pytań i hipotez:  
+1. **Jakie formy zatrudnienia są najbardziej opłacalne?**  
+   **Wniosek**: Najbardziej opłacalną formą zatrudnienia były oferty full-time z rocznym wynagrodzeniem.  
+2. **W którym stanie w USA zarabia się najwięcej?**  
+   **Wniosek**: Najwyższe średnie wynagrodzenia odnotowano w stanie Maine.  
+
+## Wnioski:  
+Projekt może być rozwinięty o szczegółową analizę pozostałych plików danych, np. dotyczących benefitów, korzyści czy bardziej zaawansowanych korelacji między zmiennymi. Wyniki mogą pomóc zarówno pracodawcom, jak i osobom poszukującym pracy w lepszym zrozumieniu rynku pracy.  
